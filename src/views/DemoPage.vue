@@ -28,9 +28,9 @@ export default class DemoPage extends Vue {
 
 <style lang="scss">
 #demo-page {
-  width: 99vw;
-  height: calc(100vh - 60px);
-  margin: 50px 0 0 0 !important;
+  width: 100%;
+  height: calc(100vh - 50px);
   padding: 0;
+  border: none;
 }
 </style>

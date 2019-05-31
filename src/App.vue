@@ -31,17 +31,22 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   display: flex;
   justify-content: center;
 
+  h1,
+  h3 {
+    text-align: center;
+  }
+
   .content {
     margin-top: 50px;
-    width: 80vw;
   }
 }
 </style>

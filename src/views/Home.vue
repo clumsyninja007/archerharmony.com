@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section>
+    <section class="dark">
       <div class="left-side">
         <h1>Archer Harmony</h1>
         <p>
@@ -27,8 +27,7 @@
         <img class="round" src="@/assets/archer_harmony.jpg" />
       </div>
     </section>
-    <hr />
-    <section class="full-width">
+    <section class="med full-width">
       <h1>Projects</h1>
       <div class="projects">
         <figure class="project">
@@ -76,15 +75,23 @@ export default class Home extends Vue {}
 <style lang="scss">
 .home {
   box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.5);
-  background-color: rgb(240, 240, 240);
-  padding: 10px;
 
   section {
     display: flex;
+    padding: 60px;
+
+    &.dark {
+      background-color: rgb(29, 29, 29);
+      color: rgb(240, 240, 240);
+    }
+
+    &.med {
+      background-color: #edeeef;
+    }
 
     .left-side,
     .right-side {
-      padding: 5px;
+      padding: 10px;
     }
 
     p {
