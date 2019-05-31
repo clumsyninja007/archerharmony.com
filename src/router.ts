@@ -38,9 +38,7 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(
-          /* webpackChunkName: "lifeforcebooks-demo" */ './views/DemoPage.vue'
-        )
+        import(/* webpackChunkName: "lfb-demo" */ './views/DemoPage.vue')
     }
   ]
 });

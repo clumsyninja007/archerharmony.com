@@ -52,7 +52,7 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            <img src="@/assets/lifeforcebooks.png" />
+            <img src="@/assets/lifeforcebooks2.jpg" />
           </a>
           <figcaption class="description">
             This is a rewrite of my grandfather's website, lifeforcebooks.com,
