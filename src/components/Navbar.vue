@@ -65,9 +65,9 @@ export default class Navbar extends Vue {
 <style lang="scss">
 nav {
   position: fixed;
-  width: calc(100vw - 60px);
+  width: calc(100vw - 120px);
   margin: 0;
-  padding: 0 30px;
+  padding: 0 60px;
   height: 50px;
   top: 0;
   background-color: #333;

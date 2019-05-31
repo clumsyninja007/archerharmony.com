@@ -17,7 +17,7 @@ import Navbar from '@/components/Navbar.vue';
 export default class App extends Vue {
   public navList = [
     { label: 'Home', location: '/' },
-    { label: 'About', location: '/about' },
+    { label: 'Contact Me', location: '/contact' },
     { label: 'Notkace', location: '/notkace-demo' },
     { label: 'Life Force Books', location: '/lifeforcebooks-demo' }
   ];
@@ -43,10 +43,12 @@ body {
   h1,
   h3 {
     text-align: center;
+    margin-top: 0;
   }
 
   .content {
     margin-top: 50px;
+    width: 100%;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <section class="dark">
+    <content-section>
       <div class="left-side">
         <h1>Archer Harmony</h1>
         <p>
@@ -26,8 +26,8 @@
       <div class="right-side">
         <img class="round" src="@/assets/archer_harmony.jpg" />
       </div>
-    </section>
-    <section class="med full-width">
+    </content-section>
+    <content-section class="full-width">
       <h1>Projects</h1>
       <div class="projects">
         <figure class="project">
@@ -61,72 +61,16 @@
           </figcaption>
         </figure>
       </div>
-    </section>
+    </content-section>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import ContentSection from '@/components/ContentSection.vue';
 
-@Component
+@Component({
+  components: { ContentSection }
+})
 export default class Home extends Vue {}
 </script>
-
-<style lang="scss">
-.home {
-  box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.5);
-
-  section {
-    display: flex;
-    padding: 60px;
-
-    &.dark {
-      background-color: rgb(29, 29, 29);
-      color: rgb(240, 240, 240);
-    }
-
-    &.med {
-      background-color: #edeeef;
-    }
-
-    .left-side,
-    .right-side {
-      padding: 10px;
-    }
-
-    p {
-      text-align: start;
-    }
-
-    img.round {
-      border-radius: 50%;
-    }
-
-    &.full-width {
-      display: block;
-      padding: 5px;
-    }
-  }
-
-  .projects {
-    display: flex;
-    justify-content: space-evenly;
-
-    .project {
-      width: 40%;
-
-      a {
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  figure {
-    figcaption.description {
-      text-align: start;
-    }
-  }
-}
-</style>
