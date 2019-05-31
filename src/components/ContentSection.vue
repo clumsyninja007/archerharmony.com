@@ -48,15 +48,32 @@ section {
   .projects {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     .project {
       width: 40%;
+      min-width: 300px;
 
       a {
         img {
           width: 100%;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section {
+    img.round {
+      width: 90%;
     }
   }
 }
